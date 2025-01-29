@@ -32,3 +32,7 @@ function topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scrolling to top
 }
 
+document.querySelector('a[href="safety-guidelines.html"]').addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default link behavior
+    window.location.href = "safety-guidelines.html"; // Redirect to the safety guidelines page
+});
